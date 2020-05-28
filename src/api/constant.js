@@ -1,7 +1,7 @@
 let BaseURL;
 
 if (process && process.env && process.env.NODE_ENV === 'dev') {
-  BaseURL = 'http://localhost:3030/api';
+  BaseURL = 'http://www.kabutong.top:3030/api';
 } else {
   BaseURL = '/api';
 }
