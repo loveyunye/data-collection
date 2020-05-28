@@ -1,0 +1,107 @@
+html {
+  color: #ffffff;
+  font-size: 10px;
+}
+body {
+  font-size: 1.4rem;
+  background-color: #1E233E;
+}
+
+// 页面主要显示内容 以及 卡片样式
+.page-container {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  .card-item {
+    box-sizing: border-box;
+    flex-basis: calc(33.33% - 20px);
+    min-width: 300px;
+    background-color: #1c2139;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      line-height: 2.2rem;
+      height: 2.2rem;
+      span:nth-child(1) {
+        color: #00abff;
+        font-size: 1.8rem;
+      }
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+// element-ui 一些组件样式重置
+.el-form-item {
+  .el-input .el-input__inner {
+    background: none;
+  }
+  .el-form-item__label {
+    color: #ccd0d6;
+  }
+  .el-input__inner {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+  }
+  .el-textarea__inner {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+  }
+  .el-select {
+    width: 100%;
+  }
+  &.is-error .monaco-editor-wrapper {
+    border: 1px solid #F56C6C;
+  }
+  .el-select-dropdown.el-popper {
+    background-color: #123456;
+    border: 1px solid #409EFF;
+    margin-top: 2px;
+    .popper__arrow {
+      display: none;
+    }
+    .el-select-dropdown__item {
+      &.hover {
+        background-color: rgb(69, 83, 113);
+      }
+    }
+  }
+}
+
+/** 提示框样式 */
+.el-message.el-message--success,
+.el-message.el-message--error,
+.el-message.el-message--info {
+  background: rgba(37,43,73, 0.9);
+  color: #fff;
+  min-width: 160px;
+  border-color: #fff;
+  .el-icon-success,
+  .el-icon-error,
+  .el-message__content {
+    color: #fff;
+  }
+}
+
+// 提示框
+.el-message-box__wrapper .el-message-box {
+  background-color: rgba(37,43,73, 1);
+  border-color: rgba(37,43,73, 1);
+  .el-message-box__title {
+    color: #ffffff;
+  }
+  .el-message-box__headerbtn .el-message-box__close {
+    color: #dddddd;
+    font-size: 20px;
+  }
+  .el-message-box__content {
+    color: #dddddd;
+  }
+}
